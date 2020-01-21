@@ -1,0 +1,119 @@
+.highlight {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.highlight::before {
+content: "";
+position: absolute;
+width: 100%;
+height: 59%;
+top: 15px;
+left: -5px;
+background: #f7f04d;
+transform: skewX(-15deg);
+z-index: -1;
+}
+
+#Venusaur {
+  filter: grayscale(100%);
+  grid-area: center;
+  max-width: 1200px;
+  text-align: center;
+  width: 35%;
+}
+
+#VenusaurOutline {
+  grid-area: center;
+  width: 37%;
+}
+
+#VenusaurWrapper {
+  align-items: center;
+  display: grid;
+  grid-template-areas: 'center';
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  height: 100vh;
+  justify-items: center;
+  width: 100%;
+}
+
+#wallpaperWrapper {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#wallpaperWrapper img {
+  height: 100%;
+  width: 100%;
+}
+
+#workContent {
+  align-self: flex-start;
+  margin-top: -20px;
+}
+
+#workSection {
+  color: rgb(26, 26, 26);
+}
+
+#workSection h2 {
+  font-size: 3.5em;
+  text-align: center;
+}
+
+#workSection h3 {
+  font-size: 2.5em;
+  text-align: left;
+  margin-top: 40px;
+}
+
+#workSection p {
+  font-size: 1.3em;
+  text-decoration: underline;
+}
+
+#workSection li {
+  font-size: 1.1em;
+}
+
+#workTitle {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+#workTitle::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 59%;
+  top: 20px;
+  left: -10px;
+  background: rgba(247, 239, 19, 0.623);
+  transform: skewX(-15deg);
+  z-index: -1;
+}
+
+#workWrapper {
+  align-items: center;
+  display: grid;
+  grid-template-areas:
+  'title'
+  'workExperience';
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 1fr;
+  height: 100vh;
+  justify-items: center;
+  left: -30%;
+  margin-left: 50%;
+  position: absolute;
+  top: 0;
+  width: 60%;
+  z-index: 2;
+}
